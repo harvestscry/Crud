@@ -1,0 +1,94 @@
+/* Reset default margin and padding */
+body, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set background color and font */
+body.login-body {
+    background: url('img/wpp.jpg') no-repeat center center fixed; /* Ganti dengan path gambar latar belakang Anda */
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Mengatur tinggi penuh viewport */
+}
+
+/* Center the container */
+.container {
+    width: 300px; /* Mengurangi lebar kontainer untuk tampilan lebih kecil */
+    padding: 20px; /* Mengurangi padding untuk tampilan lebih kecil */
+    background-color: rgba(255, 255, 255, 0.9); /* Latar belakang putih dengan transparansi */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    display: grid; /* Menggunakan grid untuk tata letak */
+    grid-template-columns: 1fr; /* Satu kolom */
+    gap: 15px; /* Jarak antar elemen */
+    text-align: center; /* Memusatkan teks di dalam kontainer */
+}
+
+/* Logo container */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px; /* Jarak antara logo dan judul */
+}
+
+.logo {
+    width: 80px; /* Atur lebar logo */
+    height: 80px; /* Atur tinggi logo */
+    border-radius: 50%; /* Membuat logo berbentuk lingkaran */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+    box-shadow: 0 4px 8px rgba(223, 19, 213, 0.507), 0 6px 20px rgba(247, 4, 255, 0.527); /* Efek timbul */
+    transition: transform 0.3s; /* Transisi untuk efek hover */
+}
+
+.logo:hover {
+    transform: scale(1.05); /* Membesarkan logo saat hover */
+}
+
+/* Style the form elements */
+.form-group {
+    display: flex;
+    flex-direction: column; /* Mengatur label dan input dalam kolom */
+}
+
+.form-label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left; /* Memastikan label rata kiri */
+}
+
+.form-control {
+    width: 93%;
+    padding: 10px;
+    margin-bottom: 10px; /* Menambahkan margin bawah untuk jarak dari tombol */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #b627ee;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #9d0fb9;
+}
+
+/* Style the link */
+a {
+    color: #2600ff;
+    text-decoration: none;
+    text-align: center; /* Memusatkan teks */
+}
+
+a:hover {
+    text-decoration: underline;
+}

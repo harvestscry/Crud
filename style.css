@@ -1,0 +1,303 @@
+:root{
+    --color1: #c630a5;
+    --color2: #ffffff;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Mengatur tinggi penuh */
+    background-image: url('img/wpp.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container{
+    position: relative; /* Memungkinkan konten berada di atas video */
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Latar belakang kontainer dengan transparansi */
+    box-shadow: 3px 3px 20px rgba(0,0,0,.3);
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 1500px;
+}
+
+/* .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+    max-width: 1500px;
+} */
+
+.container table{
+    width: 100%;
+    border-color: rgb(170, 13, 201);
+}
+
+.container table thead{
+    vertical-align: middle;
+    border-bottom-color: #fff;
+}
+
+.container table thead th,
+.container table tfoot th{
+    border-right-color: #fff ;
+}
+
+.container table thead th:first-child,
+.container table tfoot th:first-child{
+    border-left-color: hwb(300 13% 22%);
+}
+
+.container table thead th:last-child,
+.container table tfoot th:last-child{
+    border-right-color: #c830c0;
+}
+
+table thead tr th,
+table tbody tr td,
+table tfoot tr th{
+    text-align: left !important;
+}
+
+table thead th:last-child{
+    pointer-events: none;
+}
+
+table thead th:last-child .dt-column-order{
+    display: none;
+}
+
+
+
+
+
+table tbody tr{
+    cursor: pointer;
+}
+
+table tbody tr:nth-child(even){
+    background: #f2f2f2 !important;
+}
+
+table tbody tr:hover{
+    background: #c830a7 !important;
+    color: #fff;
+}
+
+table tbody tr:hover td:not(:last-child){
+    border-right-color: #fff;
+}
+
+table tbody tr td{
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+table tbody tr td:first-child{
+    font-weight: 600;
+    text-align: center !important;
+}
+
+table tbody .dt-empty{
+    text-align: center !important;
+}
+
+table thead tr,
+table tfoot tr{
+    background: #bb30c8;
+    color: #fff;
+}
+
+tbody tr td:last-child,
+thead tr th:last-child,
+tfoot tr th:last-child{
+    width: 160px;
+}
+
+
+
+
+
+.pagination .dt-paging-button.active .page-link{
+    background: #c830c8 !important;
+    box-shadow: none;
+    border-color: #c830bb;
+}
+
+.pagination .dt-paging-button  .page-link{
+    border-color: #922e85;
+}
+
+.dt-length .form-select{
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* Optional: just in case */
+}
+
+.dt-scroll-body{
+    border-bottom: none !important;
+}
+
+.container table tbody tr:last-child{
+    border-bottom-color: #fff;
+}
+
+.btn{
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+.btn button{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background: #c830c0;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+}
+
+.btn button i{
+    font-size: 18px;
+}
+
+.dt-length label, 
+.dt-info{
+    color: #c630ad;
+    font-weight: 600 !important;
+}
+
+#dt-search-0{
+    border-color: #c330c8;
+    box-shadow: none;
+}
+
+#dt-length-0{
+    border-color: #c830b4;
+    box-shadow: none;
+}
+
+
+.actionBtn{
+    border: none;
+    outline: none;
+    background: #c830bb;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 17px;
+}
+
+tbody tr:hover .actionBtn{
+    background: #fff;
+    color: #c830bb;
+}
+
+
+
+
+
+
+/* Modal */
+.modal-header{
+    background: #c830af;
+    color: #fff;
+}
+
+.cross{
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    background: transparent;
+}
+
+.modal span{
+    color: rgb(255, 0, 255);
+    font-size: 18px;
+}
+
+
+.submitBtn{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background: #b630c8;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Gaya untuk video latar belakang */
+.background-video {
+    position: fixed; /* Memastikan video tetap di belakang */
+    top: 50%; /* Memusatkan video secara vertikal */
+    left: 50%; /* Memusatkan video secara horizontal */
+    min-width: 100%; /* Memastikan video menutupi lebar penuh */
+    min-height: 100%; /* Memastikan video menutupi tinggi penuh */
+    width: auto; /* Mengatur lebar otomatis */
+    height: auto; /* Mengatur tinggi otomatis */
+    z-index: -1; /* Menempatkan video di belakang konten */
+    transform: translate(-50%, -50%); /* Memusatkan video */
+}
+
+/* Gaya untuk kontainer */
+.container {
+    position: relative; /* Memungkinkan konten berada di atas video */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Latar belakang kontainer dengan transparansi */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center; /* Memusatkan teks */
+}
+
+/* Gaya untuk header CRUD */
+.crud-header {
+    display: flex; /* Menggunakan Flexbox untuk tata letak */
+    justify-content: space-between; /* Memisahkan elemen ke kiri dan kanan */
+    align-items: center; /* Memusatkan elemen secara vertikal */
+    margin-bottom: 20px; /* Jarak bawah untuk header */
+}
+
+/* Gaya untuk tombol */
+.btn {
+    padding: 10px 15px; /* Padding untuk tombol */
+    background-color: #007bff00; /* Warna latar belakang biru */
+    color: white; /* Warna teks putih */
+    border: none; /* Menghilangkan border */
+    border-radius: 5px; /* Sudut melengkung */
+    cursor: pointer; /* Menunjukkan bahwa ini adalah tombol yang dapat diklik */
+    margin: 5px 0; /* Jarak antara tombol */
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Warna latar belakang merah untuk tombol logout */
+    cursor: pointer;
+}
+
+.btn-danger:hover {
+    background-color: #c82333; /* Warna saat hover untuk tombol logout */
+}
+
+.btn-primary:hover {
+    background-color: #f023e5; /* Warna saat hover untuk tombol add new */
+}
+
+/* Gaya untuk tombol logout */
+.logout-button {
+    position: flex; /* Memposisikan tombol secara absolut */
+    top: 10px; /* Jarak dari atas */
+    right: 10px; /* Jarak dari kanan */
+    align-items: center;
+}
+
+/* Gaya tambahan sesuai kebutuhan */
